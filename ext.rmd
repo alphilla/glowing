@@ -1,0 +1,104 @@
+---
+title: "Untitled"
+author: "Alpha"
+date: "12 de septiembre de 2018"
+output:
+  pdf_document:
+    keep_tex: yes
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+For instance, this is a chunk:
+
+with echo=False we don´t get the code just the solution
+```{r, echo=FALSE}
+s=2^3
+s+1
+```
+
+This is another chunk:
+
+with results='hide'  we dont get the results
+```{r}
+s+2
+```
+
+
+
+
+#This is a level 1 header {#first_part}
+
+This *is* some **plain** text. For instance, code: `conda install`
+
+##This is a second level header
+
+This is plain text
+
+###Third level
+
+####4th
+
+#####5th
+
+$$
+\int_\omega f(\omega)d\omega=0
+$$
+
+
+##Markup
+
+1. This is a first item
+
+    i. Subitem
+   
+    ii. other subitem
+   
+2. Second
+
+3. Third
+
+* First item
+
+* Second item
+   
+        * Subitem 1
+   
+        * Subitem 2
+   
+           - Subitem 1 
+       
+           - Subitem 2 
+        
+                     * subsutimen 1
+          
+
+##lOOK, a video
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/BKcDXNbof0g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+##A picture
+
+![Caption](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Logo_UC3M.svg/1024px-Logo_UC3M.svg.png)
+
+##Links 
+
+<https://yt3.ggpht.com/a-/AN66SAz0D2u7u3F3u3AGq7qtmRPhFL2DNTwZFfD5JA=s900-mo-c-c0xffffffff-rj-k-no>
+
+[name of the link](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Logo_UC3M.svg/1024px-Logo_UC3M.svg.png)
+
+jump to the [first part](#first_part)
+
+```{r}
+data("cars")
+knitr::kable(head(cars),caption='this is a caption')
+```
+
+
+
+
